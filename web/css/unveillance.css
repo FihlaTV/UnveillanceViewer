@@ -59,6 +59,10 @@ body {
 	padding:0px;
 }
 
+#content .ic_collection_holder {
+
+}
+
 #media {
 	background:#555555;
 	text-align:center;
@@ -115,6 +119,10 @@ body {
 	padding:0 10px;
 	margin:10px;
 	display:none;
+}
+
+#aux_popup form {
+	margin-bottom: 0px;
 }
 
 #admin_advanced_search_holder {
@@ -350,6 +358,25 @@ input, select {
 	float:left;
 	padding: 4px;
 	margin:0 6px;
+}
+
+#content ul li.ic_collection_holder div.ic_collection_preview ul {
+	min-height:100px;
+}
+
+#content ul li.ic_collection_holder div.ic_collection_preview ul li {
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+span.inline_list_horizontal {
+	display:inline;
+}
+
+span.inline_list_horizontal ul li {
+	float:left;
+	font-size:0.8em;
 }
 
 ul.ic_panel_ul {
