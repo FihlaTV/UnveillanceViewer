@@ -85,7 +85,14 @@ class RouteHandler(BaseHandler):
 		if not q_list:
 			return True
 			
-		allowed_queries = ["public_hash", "get_all", "capturedOn"]
+		allowed_queries = ["public_hash", "get_all", "capturedOn", "mime_type","hashes"]
+		
+		'''
+		for kvp in q_string[1:].split("&"):
+			key_val = kvp.split("=")
+			if key_val[0] not in allowed_queries:
+				return False
+		'''
 		
 		for k, _ in q_list:
 			if k not in allowed_queries:
