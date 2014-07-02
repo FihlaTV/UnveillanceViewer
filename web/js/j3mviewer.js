@@ -762,12 +762,7 @@ With 270 to 360 degree azimuth, your bearing = 360 – azimuth
  */
 function getBearingFromAzimuth (azimuthInRadians)
 {
-	var azimuthInDegress = azimuthInRadians*Math.PI/180;
-	if (azimuthInDegress < 0.0) {
-	    azimuthInDegress += 360.0;
-	}
-	
-    var bearing = Math.round(azimuthInDegress);
+   var bearing = Math.round((azimuthInRadians*180)/Math.PI);
     
     if (bearing >= 0 && bearing < 30)
     	bearing += "° N";
